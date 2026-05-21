@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.many {
+  margin-left: 12%;
+  margin-right: 12%;
+  padding-top: 70px;
+}
+
+.many__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+.many__columns {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.many__item {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.many__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.many__arrow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  font-size: 16px;
+}
+
+/* desktop heights */
+
+.many-card-1  { height: 462px; }
+.many-card-2  { height: 298px; }
+.many-card-3  { height: 652px; }
+.many-card-4  { height: 596px; }
+.many-card-5  { height: 463px; }
+.many-card-6  { height: 550px; }
+.many-card-7  { height: 462px; }
+.many-card-8  { height: 596px; }
+.many-card-9  { height: 246px; }
+.many-card-10 { height: 678px; }
+.many-card-11 { height: 477px; }
+.many-card-12 { height: 750px; }
+.many-card-13 { height: 345px; }
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .many {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 50px;
+  }
+
+  .many__columns {
+    gap: 16px;
+  }
+
+  .column {
+    gap: 16px;
+  }
+
+  .many__title {
+    font-size: 20px;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+ .column {
+    display: contents;
+  }
+  .many__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .many__columns {
+    display: grid;
+    grid-template-columns: repeat(2 , 182px);
+    justify-content: center;
+    gap: 12px;
+  }
+
+
+
+  .many-card-1  { height: 320px; }
+  .many-card-2  { height: 290px; }
+  .many-card-3  { height: 310px; }
+  .many-card-4  { height: 280px; }
+  .many-card-5  { height: 220px; }
+  .many-card-6  { height: 260px; }
+  .many-card-7  { height: 220px; }
+  .many-card-8  { height: 280px; }
+  .many-card-9  { height: 120px; }
+  .many-card-10 { height: 360px; }
+  .many-card-11 { height: 225px; }
+  .many-card-12 { height: 355px; }
+  .many-card-13 { height: 165px; }
+}

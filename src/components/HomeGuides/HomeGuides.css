@@ -1,0 +1,146 @@
+.homeguides {
+  padding: 80px 0;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+.homeguides-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.homeguides-card {
+  width: 481px;
+  background: rgba(242, 242, 242, 1);
+
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.homeguides-card:hover {
+  transform: translateY(-5px);
+}
+
+.homeguides-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.homeguides-content {
+  padding: 28px 24px 32px;
+  text-align: center;
+}
+
+.homeguides-content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.homeguides-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .homeguides {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .homeguides-container {
+    gap: 18px;
+  }
+
+  .homeguides-card {
+    width: 100%;
+  }
+
+  .homeguides-image {
+    height: 340px;
+  }
+
+  .homeguides-content h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeguides {
+    padding: 50px 0;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .homeguides-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0 14px;
+  }
+
+  .homeguides-card {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 14px;
+  }
+
+  .homeguides-image {
+    height: 260px;
+  }
+
+  .homeguides-content {
+    padding: 20px 18px 24px;
+  }
+
+  .homeguides-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .homeguides-content p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeguides {
+    padding: 50px 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .homeguides-container {}
+
+  .homeguides-card {
+    max-width: 370px;
+  }
+
+  .homeguides-image {
+    height: 220px;
+  }
+
+  .homeguides-content {
+    padding: 18px 14px 22px;
+  }
+
+  .homeguides-content h3 {
+    font-size: 16px;
+  }
+
+  .homeguides-content p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+}

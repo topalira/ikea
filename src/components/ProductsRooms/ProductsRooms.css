@@ -1,0 +1,152 @@
+.productsrooms__categorie {
+  padding: 40px 80px;
+  margin-left: 8%;
+  margin-right: 8%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.productsrooms__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.productsrooms__p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.productsrooms__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.productsrooms__track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.productsrooms__track::-webkit-scrollbar {
+  display: none;
+}
+
+.productsrooms__card {
+  flex: 0 0 200px;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.productsrooms__label {
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.productsrooms__arrow {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productsrooms__arrow img {
+  width: 38px;
+  height: 38px;
+}
+
+.productsrooms__arrow.left {
+  left: -20px;
+}
+
+.productsrooms__arrow {
+  right: -20px;
+}
+
+@media (max-width: 768px) {
+  .productsrooms__categorie {
+    padding: 20px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .productsrooms__card {
+    flex: 0 0 140px;
+    height: 200px;
+  }
+
+  .productsrooms__label {
+    font-size: 9px;
+  }
+
+  .productsrooms__arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .productsrooms__title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .productsrooms__p {
+    text-align: center;
+    font-size: 9px;
+  }
+
+  .productsrooms__arrow.right {
+    display: none;
+  }
+}
+
+@media (max-width: 340px) {
+  .productsrooms__categorie {
+    padding: 20px;
+  }
+
+  .productsrooms__card {
+    flex: 0 0 140px;
+    height: 200px;
+  }
+
+  .productsrooms__label {
+    text-align: center;
+  }
+
+  .productsrooms__arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .productsrooms__p {
+    text-align: center;
+  }
+
+  .productsrooms__arrow.right {
+    display: none;
+  }
+}

@@ -1,0 +1,86 @@
+.cardDes {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 28px 18px 22px;
+  width: 190px;
+  min-width: 190px;
+  height: 240px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  text-align: center;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.cardDes:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.cardDes_icon {
+  width: 42px;
+  height: 42px;
+}
+
+.carddes_line {
+  width: 70px;
+  height: 1px;
+  background: #222;
+  margin: 6px 0;
+}
+
+.cardDes_title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #111;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cardDes_description {
+  font-size: 13px;
+  color: #8c8c8c;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .cardDes {
+    width: 140px;
+    min-width: 140px;
+    height: 185px;
+
+    padding: 20px 14px;
+    border-radius: 14px;
+    gap: 8px;
+  }
+
+  .cardDes_icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .carddes_line {
+    width: 45px;
+  }
+
+  .cardDes_title {
+    font-size: 11px;
+  }
+
+  .cardDes_description {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+}
