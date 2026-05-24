@@ -49,7 +49,8 @@
   background-color: white;
   padding: 8px 20px;
   border-radius: 25px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 600;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -112,7 +113,7 @@
   width: 100%;
   margin-top: 6px;
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   color: #000;
 }
@@ -124,8 +125,9 @@
   }
 
   .rooms__title {
-    font-size: 20px;
     text-align: center;
+    font-size: 16px;
+    font-weight: 600;
   }
 
   .rooms__card {

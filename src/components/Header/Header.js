@@ -1,19 +1,26 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
 import { Menu } from '../Menu/Menu';
+import { MenuStore } from '../MenuStore/MenuStore'
 import { useState } from 'react';
 
 export function Header(props) {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [storeOpen, setStoreOpen] = useState(false);
 
     return (
         <>
-            {/* 1. Залишаємо тільки один виклик Menu на початку або в кінці */}
-            <Menu 
-                isOpen={menuOpen} 
-                onClose={() => setMenuOpen(false)} 
-                img={props.img} 
-                cross={props.cross} // Цей рядок передає іконку хрестика в Menu.js
+            <Menu
+                isOpen={menuOpen}
+                onClose={() => setMenuOpen(false)}
+                img={props.img}
+                cross={props.cross} 
+            />
+            <MenuStore
+                isOpen={storeOpen}
+                onClose={() => setStoreOpen(false)}
+                lupa={props.lupa}
+                cross={props.cross}
             />
 
             <header className="header" id="header">
@@ -38,7 +45,12 @@ export function Header(props) {
                     </div>
 
                     <div className="nav-group-right">
-                        <Link to='city'><div className="location"><img src={props.geoUser} alt="geo" /> <p className='hello'>Київ</p></div></Link>
+                        <div onClick={() => setStoreOpen(true)} style={{ cursor: 'pointer' }}>
+                            <div className="location">
+                                <img src={props.geoUser} alt="geo" />
+                                <p className='hello'>Київ</p>
+                            </div>
+                        </div>
                         <Link to='login'><div className="user"><img src={props.user} alt="user" /><p className='hello'>Привіт! Увійдіть В Систему</p></div></Link>
                         <Link to='basket'><div className="cart-icons"><img src={props.basket} alt="cart" /></div></Link>
                         <Link to='like'><div className="cart-icons"><img src={props.like} alt="like" /></div></Link>

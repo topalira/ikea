@@ -16,7 +16,7 @@ export function Hero(props) {
     <div className='hero-content'>
       <p>все для дому</p>
       <div className='buttons'>
-        <Link to='/login'><div className='primary'>створити акаунт та розпочати!</div></Link>
+        <Link to='/signup'><div className='primary'>створити акаунт та розпочати!</div></Link>
         <HashLink smooth to='#catalog'><div className='secondary'>каталог <img src={props.strelka} /></div></HashLink>
       </div>
     </div>

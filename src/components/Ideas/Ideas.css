@@ -75,7 +75,6 @@
   line-height: 1;
 }
 
-/* планшет */
 @media (max-width: 992px) {
   .ideas {
     padding: 0 24px;
@@ -91,14 +90,15 @@
   .ideas-item-5 { margin-top: -85px; }
 }
 
-/* телефон — 1 колонка */
 @media (max-width: 768px) {
   .ideas {
     padding: 0 16px;
     margin-top: 48px;
   }
   .ideas-title {
-    font-size: 18px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
   }
   .ideas-grid {
     grid-template-columns: 1fr;
@@ -117,14 +117,15 @@
   }
 }
 
-/* маленький телефон */
 @media (max-width: 480px) {
   .ideas {
     padding: 0 12px;
     margin-top: 36px;
   }
   .ideas-title {
+    text-align: center;
     font-size: 16px;
+    font-weight: 600;
   }
   .ideas-card-1,
   .ideas-card-2,

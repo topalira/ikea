@@ -5,10 +5,10 @@ function Rooms() {
   const bigRooms = [
     { id: 1, image: "/rooms1.jpg", title: "ВІТАЛЬНЯ ЗАТИШКУ" },
     { id: 2, image: "/rooms2.jpg", title: "СПАЛЬНЯ СПОКОЮ" },
-    { id: 3, image: "/rooms3.jpg", title: "КУХНЯ МІНІМАЛІЗМУ" },
+    { id: 3, image: "/rooms3.jpg", title: "МІНІМАЛІЗМ" },
     { id: 4, image: "/rooms4.jpg", title: "РОБОЧИЙ ПРОСТІР" },
     { id: 5, image: "/rooms5.jpg", title: "ДИТЯЧА ГАРМОНІЯ" },
-    { id: 6, image: "/rooms6.jpg", title: "СВІТЛА ВАННА КІМНАТА" },
+    { id: 6, image: "/rooms6.jpg", title: "ВАННА КІМНАТА" },
     { id: 7, image: "/rooms7.jpg", title: "ЗОНА ВІДПОЧИНКУ" },
     { id: 8, image: "/rooms8.jpg", title: "ВАЗА НА СТІЛ" },
     { id: 9, image: "/rooms9.jpg", title: "УЮТ ВДОМА" },

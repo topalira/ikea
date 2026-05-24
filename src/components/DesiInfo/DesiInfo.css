@@ -18,7 +18,7 @@
 }
 
 .homeinfo-content {
-background: rgba(242, 242, 242, 1);
+  background: rgba(242, 242, 242, 1);
   padding: 20px;
   border-radius: 0 12px 12px 0;
   flex: 1;
@@ -44,7 +44,8 @@ background: rgba(242, 242, 242, 1);
 
 @media (max-width: 768px) {
   .homeinfo {
-    padding: 20px 1%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 
   .homeinfo-container {
@@ -79,6 +80,7 @@ background: rgba(242, 242, 242, 1);
   .homeinfo-content p {
     font-size: 12px;
   }
+
   .homeinfo-image img {
     border-radius: 12px 12px 0 0;
     max-height: 100%;

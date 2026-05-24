@@ -6,7 +6,8 @@
 }
 
 .ideasCard h2 {
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 600;
   margin-bottom: 12px;
   color: #111;
   text-align: left;

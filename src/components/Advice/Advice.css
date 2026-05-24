@@ -27,7 +27,7 @@
 }
 
 .advice_info h2 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 24px;
   letter-spacing: 1px;
@@ -51,9 +51,9 @@
 
 @media (max-width: 768px) {
   .advice_section {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
+
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .advice_imageWrapper img {

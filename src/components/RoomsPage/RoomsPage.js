@@ -1,7 +1,7 @@
 import './RoomsPage.css';
 
 import Additional from '../Additional/Additional'
-import Cat from '../Cat/Cat'
+import Catalog from '../Catalog/Catalog'
 import Cozysets from '../Cozysets/Cozysets'
 import Ideasfor from '../Ideasfor/Ideasfor'
 import Information from '../Information/Information'
@@ -11,13 +11,13 @@ import Rooms from '../Rooms/Rooms'
 export function RoomsPage() {
   return (
     <div className="RoomsPage" >
-      <Rooms/>
-      <Productss/>
-      <Information/>
-      <Cat/>
-      <Ideasfor/>
-      <Cozysets/>
-      <Additional/>
+      <Rooms />
+      <Productss />
+      <Information />
+      <Catalog />
+      <Ideasfor />
+      <Cozysets />
+      <Additional />
     </div>
   );
 }

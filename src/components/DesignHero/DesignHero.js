@@ -23,16 +23,15 @@ export function DesignHero() {
           />
         ))}
       </div>
-      <div className="designSection">
-        <h2>втілюй свої ідеї</h2>
-        <p>
-          Перетворюй свої думки у стильний та сучасний дизайн.
-          Комбінуй ідеї, експериментуй з деталями та створюй
-          простір, який надихає щодня.
+      <div className="gesign_bottom">
+        <h2 className="gesign_bottom_title">ВТІЛЮЙ СВОЇ ІДЕЇ</h2>
+        <p className="gesign_bottom_text">
+          Обирайте готові шаблони кімнат або завантажуйте власний план будинку. 
+          Експериментуйте з текстурами, комбінуйте стилі та дивіться, як меблі
+          виглядатимуть у вашій оселі ще до моменту покупки.
         </p>
       </div>
     </section>
-
   );
 }
 
@@ -40,17 +39,17 @@ const cardDess = [
   {
     icon: designIcon,
     title: "СТВОРИ ДИЗАЙН",
-    description: "habitasse consequats blandit",
+    description: "Плануй простір у 3D та обирай меблі під розміри своєї кімнати",
   },
   {
     icon: combineIcon,
     title: "КОМБІНУЙ ІДЕЇ",
-    description: "habitasse consequat egestas",
+    description: "Додавай товари BN Home, експериментуй з декором та світлом",
   },
   {
     icon: resultIcon,
     title: "РЕЗУЛЬТАТ",
-    description: "habitasse tus consequat egestas blandit",
+    description: "Зберігай готовий проєкт або замовляй весь комплект",
   },
 ];
 

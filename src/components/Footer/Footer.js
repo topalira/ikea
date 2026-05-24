@@ -2,51 +2,55 @@ import React from "react";
 import "./Footer.css";
 import { 
   FaInstagram, FaTwitter, FaTelegramPlane,
-  FaCcVisa, FaCcMastercard, FaPaypal, FaApplePay 
+  FaCcVisa, FaCcMastercard, FaPaypal, FaApplePay, FaGooglePay 
 } from "react-icons/fa";
 
 const Footer = () => {
-   const scrollToTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <div className="footer">
 
       <div className="col col1">
-        <h4>Заголовок підрозділу</h4>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-      </div>
-      <div className="col col2">
-        <h4>Заголовок підрозділу</h4>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-      </div>
-      <div className="col col3">
-        <h4>Заголовок підрозділу</h4>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-      </div>
-      <div className="col col4">
-        <h4>Заголовок підрозділу</h4>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
-        <p>Зміст підтеми</p>
+        <h4>Меблі та товари</h4>
+        <p>Дивани та крісла</p>
+        <p>Ліжка та матраци</p>
+        <p>Шафи та зберігання</p>
+        <p>Кухні та побутова техніка</p>
+        <p>Текстиль та килими</p>
+        <p>Освітлення</p>
+        <p>Посуд та кухонне приладдя</p>
+        <p>Декор для дому</p>
+        <p>Товари для саду</p>
       </div>
 
-      {/* десктоп: абсолютные блоки рядом */}
+      <div className="col col2">
+        <h4>Ідеї для кімнат</h4>
+        <p>Вітальня</p>
+        <p>Спальня</p>
+        <p>Дитяча кімната</p>
+      </div>
+
+      <div className="col col3">
+        <h4>Послуги та допомога</h4>
+        <p>Доставка та оплата</p>
+        <p>Збирання меблів</p>
+        <p>Повернення товару</p>
+        <p>Відстеження замовлення</p>
+        <p>Планування інтер'єру</p>
+        <p>Зв'язатися з нами</p>
+        <p>Питання та відповіді (FAQ)</p>
+      </div>
+
+      <div className="col col4">
+        <h4>Про компанію</h4>
+        <p>Про BN Home</p>
+        <p>Екологія та сталий розвиток</p>
+        <p>Наші магазини</p>
+      </div>
+
       <div className="socials desktop-only">
         <FaInstagram />
         <FaTwitter />
@@ -57,9 +61,9 @@ const Footer = () => {
         <FaCcMastercard />
         <FaPaypal />
         <FaApplePay />
+        <FaGooglePay />
       </div>
 
-      {/* мобайл: два ряда отдельно */}
       <div className="mobile-icons">
         <div className="socials">
           <FaInstagram />
@@ -71,16 +75,17 @@ const Footer = () => {
           <FaCcMastercard />
           <FaPaypal />
           <FaApplePay />
+          <FaGooglePay />
         </div>
       </div>
 
       <button className="scroll-top" onClick={scrollToTop}>↑</button>
 
       <div className="bottom">
-        <span>Заголовок підрозділу</span>
-        <span>Заголовок підрозділу</span>
-        <span>Заголовок підрозділу</span>
-        <span>Заголовок підрозділу</span>
+        <span>&copy; {new Date().getFullYear()} ТОВ «БН Хоум». Всі права захищені.</span>
+        <span>Політика конфіденційності</span>
+        <span>Умови використання сайту</span>
+        <span>Політика використання файлів cookie</span>
       </div>
 
     </div>
